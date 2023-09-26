@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Help</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.blue_grey-red.min.css">
+  <link rel="stylesheet" href="/src/css/help.css">
+  <link rel="manifest" href="../manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="HTW-Insta">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw57x57.png" sizes="57x57">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw60x60.png" sizes="60x60">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw72x72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw76x76.png" sizes="76x76">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw114x114.png" sizes="114x114">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw120x120.png" sizes="120x120">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw144x144.png" sizes="144x144">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw152x152.png" sizes="152x152">
+  <link rel="apple-touch-icon" href="/src/images/icons/ios-fiw180x180.png" sizes="180x180">
+</head>
+<body>
+
+<div id="app">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">BeReal</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="/">Bilder</a>
+          <a class="mdl-navigation__link" href="/public/help/index.html">Hilfe</a>
+          <div class="drawer-option">
+            <button class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
+              Benachrichtigungen Ein
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">BeReal</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="/">Feed</a>
+        <a class="mdl-navigation__link" href="/help">Help</a>
+        <div class="drawer-option">
+          <button class="enable-notifications mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-color--accent">
+            Benachrichtigungen Ein
+          </button>
+        </div>
+      </nav>
+    </div>
+    <main class="mdl-layout__content mat-typography">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col text-center">
+         <h3>ReadMe</h3>
+          <!--<p>How to BE REAL!</p>-->
+       <h4> Installation</h4>
+       <p>
+        - Zum Ausführen des Projektes wird [Node.js](https://nodejs.org) verendet. Sie müssen es auf Ihren Rechner installieren. </p>
+        
+      <p> - In der Wahl Ihrer IDE sind Sie völlig frei. Empfehlungen finden Sie unter [https://freiheit.f4.htw-berlin.de/ikt/tools/#integrated-development-environment-ide](https://freiheit.f4.htw-berlin.de/ikt/tools/#integrated-development-environment-ide)</p> 
+        
+        <p>- Zum Starten des Projektes wechseln Sie im Terminal (Terminal Ihres Rechners oder das Terminal in der IDE) in den Projektordner (`cd IKT-PWA-01`) und führen dort </p>
+        
+        <p> `npm install` </p>
+        
+        <p> aus (es genügt auch `npm i`). Damit werden alle erforderlichen Abhängigkeiten installiert. Es entsteht der `node_modules`-Ordner. </p>
+        
+        <p>  - Nach erfolgreicher Installation der Abhängigkeiten, geben Sie  </p>
+        
+        <p>   `npm start` </p>
+        
+        <p>  ein, um Ihr Projekt auszuführen (Es wird der `http-server` mit der Option `-c-1` gestartet. Diese Option disabled Caching). Klicken Sie danach auf [localhost:8080](http://localhost:8080) oder geben Sie die URL direkt in Ihren Browser ein.</p>
+        
+        <p>  - Sollten Sie Änderungen an der IMplementierung vornehmen und diese ausprobieren wollen, müssen Sie den Server zunächst wieder stoppen: </p>
+        
+        <p> `Ctrl-C`</p>
+        
+        <p>  und geben dann erneut </p>
+        
+        <p>  `npm start` </p>
+        
+        <p> ein. </p>
+       <h4> Backend</h4>
+       <p>3 Mal am Tag - Morgens, Mittags und Abends - postest du ein authentisches Bild von dir und zeigst deinen Freunden, wer und wie du wirklich bist. Auf dem + erstellt du deinen Post und wählst Titel, Bild und Location. Auf Speichern drücken und du bist einen Schritt entfernt von der der FAKE INSTAGRAM BLASE </p>
+      </div>
+      </div>
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--12-col text-center">
+         
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<script defer src="/src/js/material.min.js"></script>
+<script src="/src/js/app.js"></script>
+</body>
+</html>
